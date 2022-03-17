@@ -1,0 +1,21 @@
+#
+# Copyright (C) 2016+ AzerothCore <www.azerothcore.org>, released under GNU AGPL v3 license: https://github.com/azerothcore/azerothcore-wotlk/blob/master/LICENSE-AGPL3
+#
+
+[worldserver]
+
+########################################
+# Module Chat Censure
+########################################
+#
+#    WelcomeServer.Enable
+#        Description: Enable module and print message at server start
+#        Default:     0 - Disabled
+#                     1 - Enabled
+#
+
+WelcomeServer.Enable = 1
+
+
+# Announce the module when the player logs in?
+WelcomeServer.Announce = 1
