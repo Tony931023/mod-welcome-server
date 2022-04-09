@@ -34,7 +34,8 @@ public:
         if(player->GetSession()->GetSecurity() == SEC_PLAYER){
 
         ChatHandler(player->GetSession()).PSendSysMessage("|cffff0000=================================|r");
-        ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00Bienvenido,|r %s", pname.c_str()),"Recuerda votar por el server cada 12 horas en www.amanthul.nat.cu";
+        ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00Bienvenido,|r %s", pname.c_str());
+	ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00Recuerda votar por el server cada 12 horas en www.amanthul.nat.cu|r %s";	
         ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00Tu direcci""\xC3\xB3""n IP es:|r %s", player_ip.c_str());
         ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00En este momento hay|r %u |cff00ff00jugadores en l""\xC3\xAD""nea|r", playeronline);        
         ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00Servidor Online durante:|r %s", uptime.c_str());
