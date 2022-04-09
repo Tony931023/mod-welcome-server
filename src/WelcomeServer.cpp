@@ -43,7 +43,7 @@ public:
         //ChatHandler(player->GetSession()).SendSysMessage("Welcome back online! Your character has been saved to the database, buffed and healed! Now remember to vote every 12 hours on www.unforgivenwow.com!");
 
         player->GetSession()->SendNotification("BIENVENIDO A Aman'thul");
-        player->GetSession()->SendNotification("! %s !", player->GetName());
+        player->GetSession()->SendNotification("! %s !", pname);
         player->CastSpell(player, 11543, 1);
         }
 
