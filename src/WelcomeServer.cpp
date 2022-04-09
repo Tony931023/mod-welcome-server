@@ -40,9 +40,8 @@ public:
         ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00En este momento hay|r %u |cff00ff00jugadores en l""\xC3\xAD""nea|r", playeronline);        
         ChatHandler(player->GetSession()).PSendSysMessage("|cff00ff00Servidor Online durante:|r %s", uptime.c_str());
         ChatHandler(player->GetSession()).PSendSysMessage("|cffff0000=================================|r");
-        //ChatHandler(player->GetSession()).SendSysMessage("Welcome back online! Your character has been saved to the database, buffed and healed! Now remember to vote every 12 hours on www.unforgivenwow.com!");
-
-        player->GetSession()->SendNotification("BIENVENIDO A Aman'thul");
+        
+        player->GetSession()->SendNotification("BIENVENIDO A Aman'Thul");
         player->GetSession()->SendNotification("! %s !", pname.c_str());
         player->CastSpell(player, 11543, 1);
         }
