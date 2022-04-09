@@ -12,8 +12,8 @@ class WelcomeServer : public PlayerScript {
 public:
     WelcomeServer() : PlayerScript("WelcomeServer") {}
 
-    bool _isEnableCC	    = sConfigMgr->GetBoolDefault("WelcomeServer.Enable", true);
-    bool _isAnnounceCC	    = sConfigMgr->GetBoolDefault("WelcomeServer.Announce", true);
+    bool _isEnableCC	    = sConfigMgr->GetOption<bool>("WelcomeServer.Enable", true);
+    bool _isAnnounceCC	    = sConfigMgr->GetOption<bool>("WelcomeServer.Announce", true);
 
 	// Announce Module
 	void OnLogin(Player *player) 
