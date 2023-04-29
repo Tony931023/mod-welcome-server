@@ -18,4 +18,4 @@ WelcomeServer.Enable = 1
 
 
 # Announce the module when the player logs in?
-WelcomeServer.Announce = 1
+WelcomeServer.Announce = 0
